@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%; 
+
+}
+body {
+    background-image: url(./recursos/city-g7e5cc9a1d_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template: auto 1fr auto / 1fr;
+}
+.header {
+    width: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.411), #2314497c);
+    position: sticky;
+    top: 0;
+}
+.bar-nav {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    height: 6.9rem;
+    align-items: center;
+    max-width: 120rem;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.bar-nav .bar-nav_logo {
+    display: flex;
+    text-decoration: none;
+    margin-left: 1rem;
+    align-items: center;
+    border: 0.25rem solid white;
+    padding: 0.1rem;
+    border-radius: 0.6rem;
+}
+.bar-nav a img {
+    width: 4.5rem;
+    height: 4.6rem;
+}
+.bar-nav a span {
+    color: white;
+    font-size: 3rem;  
+    margin: 0rem 1rem 0rem 1rem ;
+    font-family: 'Dongle', sans-serif;
+}
+.bar-nav .bar-nav_logo:hover {
+    background-color: white;
+    transition-duration: 0.5s;
+}
+.bar-nav .bar-nav_logo:hover span {
+    color: black;
+    transition-duration: 0.5s;
+}
+
+.bar-nav a span:hover {
+    color: black;
+    transition-duration: 0.3s;
+}
+.bar-nav .bar-nav_list {
+    list-style: none;
+    display: flex;
+}
+.bar-nav_list li {
+    display: flex;
+    margin-right: 1rem;
+}
+.bar-nav_list li:last-child a {
+    border: 0.1rem solid white;
+}
+.bar-nav_list_element i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    
+}
+.bar-nav_list_element  {
+    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    text-decoration: none;
+    padding: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    
+}
+ 
+.bar-nav_list_element:hover {
+    background-color: white;
+    color: #2a1a52;
+    transition-duration: 0.5s;
+}
+.bar-nav_list_element:hover i{
+    color: #2a1a52;
+    transition-duration: 00.5s;
+}
+/* ------------------------------------------------------------------------ */
