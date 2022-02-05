@@ -1,0 +1,96 @@
+/* * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+  background: linear-gradient(to bottom, rgb(207, 207, 207), rgb(41, 41, 41));
+}
+.header {
+  background-color: rgba(0, 0, 0, 0.603); */
+  width: 100%;
+  /* margin-left: calc(100vw - 1600px /2 );
+  margin-right: calc(100vw - 1600px /2); */
+/* }
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 5.4rem;
+}
+.header-nav__container-logo  {
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  text-decoration: none ;
+  transition: all 0.5s; */
+  /* border-radius: 50%; */
+  /* -Esta propiedad hace que todo lo que sobresale del contenedor se oculta. */
+  /* overflow: hidden; */
+/* }
+.header-nav__container-logo i {
+  font-size: 3.2rem;
+  color: white;
+  
+
+}
+
+.header-nav__container-logo:hover { */
+ /* border: 0.25rem solid rgb(0, 0, 0); */
+ /* border-radius: 50%; */
+ /* transform: scale(1.1); */
+ /* margin-left: 0.75rem; */
+/* transform: scale(1.2);
+} 
+.header-nav__container-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  gap: 0.7rem;
+  margin-right: 1rem;
+}
+.header-nav-link__items {
+  text-decoration: none;
+  color: #ffff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  transition: all 0.5s;
+  display: flex;
+}
+.header-nav-link__items:hover {
+  background-color: thistle;
+  color: black;
+  transform: scale(1.1);
+} */
+/*   
+  a {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 19.5%;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 3;
+    color: black;
+  }
+  
+  li:last-child a {
+    margin-right: 0;
+  }
+  
+  a {
+    background: yellow;
+  }
+  
+  a:hover {
+    background: orange;
+  }
+  
+  a:active {
+    background: red;
+    color: white;
+  } */
