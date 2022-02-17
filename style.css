@@ -700,28 +700,28 @@ html {
         margin-left: 0.6rem;
     }
     #footer_icon1 {
-        animation: color-zoom-footer1 3s alternate 0s linear infinite;
+        animation: color-zoom-footer1 3s alternate 0s cubic-bezier(0.86, 0.02, 0, 0.99) infinite;
     }
     #footer_icon2 {
-        animation: color-zoom-footer2 3s alternate 0s linear infinite;
+        animation: color-zoom-footer2 3s alternate 0s cubic-bezier(0.86, 0.02, 0, 0.99) infinite;
     }
     #footer_icon3 {
-        animation: color-zoom-footer3 3s alternate 0s linear infinite;
+        animation: color-zoom-footer3 3s alternate 0s cubic-bezier(0.86, 0.02, 0, 0.99) infinite;
     }
     #footer_icon4 {
-        animation: color-zoom-footer4 3s alternate 0s linear infinite;
+        animation: color-zoom-footer4 3s alternate 0s cubic-bezier(0.86, 0.02, 0, 0.99) infinite;
     }
     #footer_icon5 {
-        animation: color-zoom-footer5 3s alternate 0s linear infinite;
+        animation: color-zoom-footer5 3s alternate 0s cubic-bezier(0.86, 0.02, 0, 0.99) infinite;
     }
     #footer_icon6 {
-        animation: color-zoom-footer1 3s alternate 0s linear infinite;
+        animation: color-zoom-footer1 3s alternate 0s cubic-bezier(0.86, 0.02, 0, 0.99) infinite;
     }
     #footer_icon7 {
-        animation: color-zoom-footer2 3s alternate 0s linear infinite;
+        animation: color-zoom-footer2 3s alternate 0s cubic-bezier(0.86, 0.02, 0, 0.99) infinite;
     }
     #footer_icon8 {
-        animation: color-zoom-footer3 3s alternate 0s linear infinite;
+        animation: color-zoom-footer3 3s alternate 0s cubic-bezier(0.86, 0.02, 0, 0.99) infinite;
     }
     .box__container-footer-2 {
         background-color: #000000;

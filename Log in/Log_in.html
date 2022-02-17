@@ -18,22 +18,60 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     
-    </head>
-    <body>
-        <header class="header">
-            <nav class="bar-nav">
+     
+</head>
+<body>
+    <header class="header">
+        <nav class="bar-nav">
+            <div class="box_bar-nav_logo">
                 <a class="bar-nav_logo" href="../index.html">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1245/1245363.png" alt="Logo de la página">
-                    <span>PARANORMAL MYSTERY STORIES</span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1245/1245193.png" alt="Logo de la página">
+                    <div class="cover__container">
+                    <div class="cover__container1-name">
+                    <span class="cover__name-letter" style="--letter: 'P'">P</span>
+                    <span class="cover__name-letter" style="--letter: 'A'">A</span>
+                    <span class="cover__name-letter" style="--letter: 'R'">R</span>
+                    <span class="cover__name-letter" style="--letter: 'A'">A</span>
+                    <span class="cover__name-letter" style="--letter: 'N'">N</span>
+                    <span class="cover__name-letter" style="--letter: 'O'">O</span>
+                    <span class="cover__name-letter" style="--letter: 'R'">R</span>
+                    <span class="cover__name-letter" style="--letter: 'M'">M</span>
+                    <span class="cover__name-letter" style="--letter: 'A'">A</span>
+                    <span class="cover__name-letter" style="--letter: 'L'">L</span>
+                    </div>
+                    <div class="cover__container2-name">
+                    <span class="cover__name-letter" style="--letter: 'M'">M</span>
+                    <span class="cover__name-letter" style="--letter: 'Y'">Y</span>
+                    <span class="cover__name-letter" style="--letter: 'S'">S</span>
+                    <span class="cover__name-letter" style="--letter: 'T'">T</span>
+                    <span class="cover__name-letter" style="--letter: 'E'">E</span>
+                    <span class="cover__name-letter" style="--letter: 'R'">R</span>
+                    <span class="cover__name-letter" style="--letter: 'Y'">Y</span>
+                    <span class="cover__name-letter" style="--letter: 'S'">S</span>
+                    <span class="cover__name-letter" style="--letter: 'T'">T</span>
+                    <span class="cover__name-letter" style="--letter: 'O'">O</span>
+                    <span class="cover__name-letter" style="--letter: 'R'">R</span>
+                    <span class="cover__name-letter" style="--letter: 'I'">I</span>
+                    <span class="cover__name-letter" style="--letter: 'E'">E</span>
+                    </div>      
+                    </div>
+                           
                 </a>
-                <ul class="bar-nav_list">
-                    <li><a class="bar-nav_list_element" href="#">POSTS</a></li>
-                    <li><a class="bar-nav_list_element" href="#">CREATE-POST</a></li>
-                    <li><a class="bar-nav_list_element" href="../Register/register.html">REGISTER</a></li>
-                    <li><a class="bar-nav_list_element" href="./Log_in.html"><i class="fas fa-user-lock"></i>LOGIN</a></li>
-                </ul>
-            </nav>
-        </header>
+            </div>
+            <label class="header-nav__menu-icon" for="menu">
+                <i class="fas fa-hamburger"></i>
+            </label>
+            <input type="checkbox" name="menu" id="menu" class="header-nav__menu-checkbox">
+            <ul class="bar-nav_list">
+                <li><a class="bar-nav_list_element" id="bar-nav_list_element1" style="--letter: 'POSTS'" href="#">POSTS</a></li>
+                <li><a class="bar-nav_list_element" id="bar-nav_list_element2" style="--letter: 'CREATE-POST'" href="#">CREATE-POST</a></li>
+                <li><a class="bar-nav_list_element" id="bar-nav_list_element3" style="--letter: 'REGISTER'" href="../Register/register.html">REGISTER</a></li>
+                <li><a class="bar-nav_list_element" id="bar-nav_list_element4" style="--letter: 'LOGIN'" href="./Log_in.html">
+                    <i class="fas fa-user-lock"></i>
+                    LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
         <main class="main-section-register"> 
             <section class="container-section-register">
                 <h2>Long in</h2>
@@ -41,18 +79,18 @@
                 <form class="container_form" action="">
                   <div class="box-container">
                       <label class="box-container_label" for="usuario">Username</label>
-                      <div class="div-box-container_input">
+                      <label class="div-box-container_input">
                           <i class="fas fa-user-tie"></i>
                           <input class="box-container_input" type="text" id="usuario" name="Username" placeholder="Nagasakiuwu" required>
-                      </div>
+                      </label>
                   </div>     
 
                   <div class="box-container">
                       <label class="box-container_label" for="contraseña">Password</label>
-                      <div class="div-box-container_input">
+                      <label class="div-box-container_input">
                           <i class="fas fa-unlock-alt"></i>
                           <input class="box-container_input" type="password" id="contraseña" placeholder="Minimum 9 digits" required>
-                      </div>
+                      </label>
                   </div>
      
                   <input class="butoom" type="submit" value="Log in">
@@ -66,69 +104,77 @@
             
             
         </main>
-        <footer>
-            <div class="container-footer"> 
-                <addres class="container-footer_addres">
-                    <h2>Creator Information</h2>
+        <footer>  
+            <div class="container-footer">
+    
+                <addres class="container-footer_addres1">
+                    <h2 class="footer-h2">Creator Information</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A esse ut fugit dolorem voluptas. Soluta dicta sed velit officiis exercitationem voluptates, nulla ducimus quisquam quos et laudantium commodi</p>
                     <div class="container__link-page-contact">
-                        <a  class="link-page-contact" href="../personal_page/personal_page.html" id="link-page-contact">
+                        <a  class="link-page-contact" href="./personal_page/personal_page.html" id="link-page-contact">
                             <i class="fas fa-user-secret"></i> 
                             <span>Buscame y Contactame </span>
                             <i class="fas fa-user-secret"></i>
                         </a>
                     </div>
                 </addres>
-                <addres class="container-footer_addres">
-                    <h2 id="h2">Social Networks</h2>
+                <div id="box-responsive">
+                   <addres class="container-footer_addres2">
+                    <h2 class="footer-h2">Social Networks</h2>
                     <a href="#" class="row-1"> 
-                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-facebook-square" id="footer_icon1"></i>
                         <span >Follow me on Facebook</span>
                     </a>
                    
                     <a href="#" class="row-1">
-                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-twitter-square" id="footer_icon2"></i>
                         <span >Follow me on Twitter</span>
                     </a>
                     
                     <a href="#" class="row-1">
-                        <i class="fab fa-google-plus-square"></i>
+                        <i class="fab fa-google-plus-square" id="footer_icon3"></i>
                         <span >Follow me on Google Plus</span>
                     </a>
                     
-                    <a href="" class="row-1">
-                        <i class="fab fa-instagram-square"></i>
+                    <a href="#" class="row-1">
+                        <i class="fab fa-instagram-square" id="footer_icon4"></i>
                         <span for="">Follow me on Instagram</span>
                     </a>
                     <a href="#" class="row-1">
-                        <i class="fab fa-pinterest-square"></i>
+                        <i class="fab fa-pinterest-square" id="footer_icon5"></i>
                         <span >Follow me on Pinteres</span>
                     </a>
                 </addres>
-                <addres class="container-footer_addres">
-                    <h2>Information Contact</h2>
+                <addres class="container-footer_addres3">
+                    <h2 class="footer-h2">Information Contact</h2>
                     <a href="#" class="row-2">
-                        <i class="fas fa-house-user"></i>
+                        <i class="fas fa-house-user" id="footer_icon6"></i>
                         <span>La Romana,Republica Dominicana Mnuel de Cabral Casa # 27</span>
                     </a>
-                    <a href="#" class="row-2">
-                        <i class="fas fa-mobile-alt"></i>
+                    <a href="#" class="row-2" id="row-2">
+                        <i class="fas fa-mobile-alt" id="footer_icon7"></i>
                         <span>+51-324-456-3892</span>
                     </a>
                     <a href="#" class="row-2">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-envelope" id="footer_icon8"></i>
                         <span class="center">elcolorloestodo@gmail.com</span>
                     </a>
-                </addres>    
+                </addres>  
+                </div>
+                   
             </div>       
          
             <div class="box__container-footer-2">
                 <div class="container-footer-2">
                     <div class="copyright">
-                     © 2021 Todos los Derechos Reservados | <a href="">Magtimus</a> 
+                     <p>© 2021 Todos los Derechos Reservados | </p> <a href=""> Magtimus</a>
                     </div>
                     <div class="information">
-                     <a href="">Informacion Compañia</a> | <a href="">Privacidad y Politica</a> | <a href="">Terminos y Condiciones</a> 
+                     <a href="">Informacion Compañia</a>
+                     <div>|</div>
+                     <a href="">Privacidad y Politica</a>
+                     <div>|</div>
+                     <a class="a-ultm" href="">Terminos y Condiciones</a> 
                     </div>
                 </div>  
             </div> 
