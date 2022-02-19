@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniel Abraham Enriquez Colqui</title>
     <link rel="stylesheet" href="./personal_page-style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,8 +20,13 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Shizuru&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo&family=IBM+Plex+Sans&family=Shizuru&display=swap" rel="stylesheet">
   </head>
-  <body class="body">
+  
+    <body class="body">
+    <video class="background-video" autoplay preload="auto" loop src="../recursos/video.mp4"></video>
     <header class="header">
         <nav class="header-nav">
             <a class="header-nav__container-logo" href="">
@@ -48,34 +47,212 @@
     </header>
     <main class="main">
       <section id="perfil" class="perfil">
-        <h2>
-          PERFIL
-        </h2>
+        <div class="perfi-container__info">
+          <h2 class="perfil__title">
+          Daniel Enriquez Desarrollador Web
+          </h2>
+          <h3 class="perfil__sub-title">
+          Si un diseño no se siente bien en el corazón, lo que dice el cerebro no importa.
+          </h3>
+          <p class="perfil__p">
+          Estudiante de Ingeniería de Software perteneciente a los primeros puestos. Apasionado 
+          del autoaprendizaje con el sueño de crecer en el Desarrollo Web Frontend con la biblioteca
+           React. Asimismo, amo compartir los conocimientos adquiridos día a día mediante la docencia.
+          </p>
+        </div>
+        <div class="perfil-container__enlaces">
+          <a class="perfil__enlace perfil__enlace-CV" href="#">
+            <i class="fas fa-file-user"></i>CV
+          </a>
+          <a class="perfil__enlace perfil__enlace-portafolio" href="#">
+            <i class="fa-solid fa-briefcase-arrow-right"></i>Portafolio
+          </a>
+        </div>
+           <!-- <figure> 
+          <img class="perfil__foto" src="../recursos/foto-perfil.jpg" alt="Mi foto de perfil">
+        </figure> -->
+        <div class="perfil-container__foto">
+          <video class="perfil__foto" autoplay preload="auto" loop src="../recursos/5207155655961359940_play.mp4_logo_US.mp4"> 
+          </video>
+        </div>
+        
       </section>
       <section id="experiencia" class="experiencia">
-        <h2>
-          EXPERIENCIA
-        </h2>
+          <div class="experiencia-container">
+            <h2 class="experiencia__title">Experiencia</h2>
+            <div class="experiencia__experiences">
+              <section class="experiencia__experience">
+                <h4 class="experiencia__date">octubre 2021, presente</h4>
+                <h3 class="experiencia__company">Mandü</h3>
+                <h4 class="experiencia__role">Software Engineer Trainee</h4>
+                <ul class="experiencia__activities">
+                  <li class="experiencia__activity">Mantenimiento web: Actualización de diseño, optimización y adición de
+                    funcionalidades.</li>
+                  <li class="experiencia__activity">Maquetación web de diseños del Figma en Laravel.</li>
+                </ul>
+              </section>
+              <section class="experiencia__experience">
+                <h4 class="experiencia__date">septiembre 2021, presente</h4>
+                <h3 class="experiencia__company">DRIVEN</h3>
+                <h4 class="experiencia__role">Frontend Developer Junior</h4>
+                <ul class="experiencia__activities">
+                  <li class="experiencia__activity">Desarrollo de aplicaciones e-commerce con VTEX IO y React bajo el marco
+                    de trabajo Scrum.</li>
+                  <li class="experiencia__activity">Maquetación web de diseños del Figma en React esencialmente con CSS.
+                  </li>
+                </ul>
+              </section>
+              <section class="experiencia__experience">
+                <h4 class="experiencia__date">junio 2021, presente</h4>
+                <h3 class="experiencia__company">Idat</h3>
+                <h4 class="experiencia__role">Docente</h4>
+                <ul class="experiencia__activities">
+                  <li class="experiencia__activity">Curso: Diseño y Desarrollo Web: HTML, CSS, JavaScript, Bootstrap,
+                    jQuery, PHP y MySQL.</li>
+                  <li class="experiencia__activity">Desarrollo de proyectos y materiales para el aprendizaje teórico y
+                    práctico de los alumnos.</li>
+                </ul>
+              </section>
+              <section class="experiencia__experience">
+                <h4 class="experiencia__date">diciembre 2020, marzo 2021</h4>
+                <h3 class="experiencia__company">Tata Consultancy Services</h3>
+                <h4 class="experiencia__role">Trainee de Sistemas</h4>
+                <ul class="experiencia__activities">
+                  <li class="experiencia__activity">Testing de código en GeneXus, AS/400, HTML, CSS, JavaScript, Java, VB,
+                    SQL.</li>
+                  <li class="experiencia__activity">Desarrollo de casos de prueba y ejecución de pruebas funcionales.</li>
+                </ul>
+              </section>
+              <section class="experiencia__experience">
+                <h4 class="experiencia__date">marzo 2020, diciembre 2020</h4>
+                <h3 class="experiencia__company">Canvia</h3>
+                <h4 class="experiencia__role">Practicante Pre Profesional de Sistemas</h4>
+                <ul class="experiencia__activities">
+                  <li class="experiencia__activity">Desarrollo de admin’s con React y conexión con API’s para el control de
+                    los bot’s de RPA.</li>
+                  <li class="experiencia__activity">Desarrollo de flujos automatizados con Power Automate, bajo el marco de
+                    trabajo Scrum.</li>
+                </ul>
+              </section>
+            </div>
+          </div>
       </section>
       <section id="habilidades" class="habilidades">
-        <h2>
-          HABILIDADES
-        </h2>
+          <div class="habilidades-container">
+            <h2 class="habilidades__title">Habilidades</h2>
+            <ul class="habilidades__habilidades-list">
+              <li class="habilidades__habilidad">React</li>
+              <li class="habilidades__habilidad">JavaScript</li>
+              <li class="habilidades__habilidad">CSS</li>
+              <li class="habilidades__habilidad">HTML</li>
+              <li class="habilidades__habilidad">TypeScript</li>
+              <li class="habilidades__habilidad">Sass</li>
+              <li class="habilidades__habilidad">Bootstrap</li>
+              <li class="habilidades__habilidad">RWD</li>
+              <li class="habilidades__habilidad">BEM</li>
+              <li class="habilidades__habilidad">UX/UI</li>
+              <li class="habilidades__habilidad">SEO</li>
+              <li class="habilidades__habilidad">Node.js</li>
+              <li class="habilidades__habilidad">Express.js</li>
+              <li class="habilidades__habilidad">API</li>
+              <li class="habilidades__habilidad">MySQL</li>
+              <li class="habilidades__habilidad">Mongo</li>
+              <li class="habilidades__habilidad">git</li>
+              <li class="habilidades__habilidad">Scrum</li>
+              <li class="habilidades__habilidad">Calidad de Software</li>
+            </ul>
+          </div>
       </section>
-      <section id="contactar" class="contactar">
-        <h2>
-          CONTACTAR
-        </h2>
+      <section class="contacto" id="contactar">
+        <div class="contacto-container">
+          <h2 class="contacto__tittle">Contacto</h2>
+          <form action="/" class="contacto__form">
+            <input type="text" placeholder="Nombre" name="nombre" class="contacto__form-input" required="" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$" title="No se aceptan caracteres especiales ni números">
+            <input type="email" placeholder="Correo" name="email" class="contacto__form-input" required="">
+            <input type="number" id="celular" placeholder="Celular" name="celular" class="contacto__form-input" min="900000000" max="999999999" required="">
+            <textarea placeholder="Mensaje" name="mensaje" cols="30" rows="10" class="contacto__form-input" required="" ></textarea>
+            <button class="contacto__form-button">Empieza a soñar</button>
+          </form>
+        </div>
       </section>
     </main>
-    <footer class="footer">
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi sunt
-        nemo neque vero. Doloremque dignissimos ab recusandae molestiae? Iusto
-        doloribus consequatur veniam, consectetur in quas aut molestiae corporis
-        culpa odio!
-      </p>
-    </footer>
+    <footer class="footer">  
+      <div class="container-footer">
+          <addres class="container-footer__addres1">
+              <h2 class="addres1__h2">Creator Information</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A esse ut fugit dolorem voluptas. Soluta dicta sed velit officiis exercitationem voluptates, nulla ducimus quisquam quos et laudantium commodi</p>
+              <div class="container-link__page__contact">
+                  <a  class="link__page__contact" href="./personal_page/personal_page.html" id="link-page-contact">
+                      <i class="fas fa-user-secret"></i> 
+                      <span>Buscame y Contactame </span>
+                      <i class="fas fa-user-secret"></i>
+                  </a>
+              </div>
+          </addres>
+          <addres class="container-footer__addres2">
+              <h2 class="addres2__h2">Social Networks</h2>
+              <div class="container-rows1">
+                <a href="#" class="row-1-1"> 
+                  <i class="fab fa-facebook-square" id="footer_icon1"></i>
+                  <span >Follow me on Facebook</span>
+                </a>
+             
+                <a href="#" class="row-1-2">
+                  <i class="fab fa-twitter-square" id="footer_icon2"></i>
+                  <span >Follow me on Twitter</span>
+                </a>
+              
+                <a href="#" class="row-1-3">
+                  <i class="fab fa-google-plus-square" id="footer_icon3"></i>
+                  <span >Follow me on Google Plus</span>
+                </a>
+              
+                <a href="#" class="row-1-4">
+                  <i class="fab fa-instagram-square" id="footer_icon4"></i>
+                  <span for="">Follow me on Instagram</span>
+                </a>
+                <a href="#" class="row-1-5">
+                  <i class="fab fa-pinterest-square" id="footer_icon5"></i>
+                  <span >Follow me on Pinteres</span>
+                </a>
+              </div>
+              
+          </addres>
+          <addres class="container-footer__addres3">
+              <h2 class="addres3__h2">Information Contact</h2>
+              <div class="container-rows2">
+                <a href="#" class="row-2-1">
+                  <i class="fas fa-house-user" id="footer_icon6"></i>
+                  <span>La Romana,Republica Dominicana Mnuel de Cabral Casa # 27</span>
+                </a>
+                <a href="#" class="row-2-2" id="row-2">
+                  <i class="fas fa-mobile-alt" id="footer_icon7"></i>
+                  <span>+51-324-456-3892</span>
+                </a>
+                <a href="#" class="row-2-3">
+                  <i class="fas fa-envelope" id="footer_icon8"></i>
+                  <span class="center">elcolorloestodo@gmail.com</span>
+                </a>
+              </div>
+              
+          </addres>   
+      </div>       
+   
+      <div class="box__container-footer-2">
+          <div class="container-footer-2">
+              <div class="copyright">
+               <p>© 2021 Todos los Derechos Reservados | </p> <a href=""> Magtimus</a>
+              </div>
+              <div class="information">
+               <a href="">Informacion Compañia</a>
+               <div>|</div>
+               <a href="">Privacidad y Politica</a>
+               <div>|</div>
+               <a class="a-ultm" href="">Terminos y Condiciones</a> 
+              </div>
+          </div>  
+      </div> 
+  </footer>
     <script src="./index-dom.js" type="module"></script>
-  </body>
+  </bod>
 </html>
