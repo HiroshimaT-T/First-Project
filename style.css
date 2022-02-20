@@ -19,7 +19,7 @@ html {
         background-image: url(./recursos/background-cellphone.jpg);
         background-attachment: fixed;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top;
         background-size: cover;
         display: grid;
         min-height: 100vh;
