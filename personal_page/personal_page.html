@@ -16,20 +16,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Shizuru&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo&family=IBM+Plex+Sans&family=Shizuru&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=IBM+Plex+Sans&family=Shizuru&display=swap" rel="stylesheet">
   </head>
-  
     <body class="body">
-    <video class="background-video" autoplay preload="auto" loop src="../recursos/video.mp4"></video>
     <header class="header">
         <nav class="header-nav">
-            <a class="header-nav__container-logo" href="">
+            <a class="header-nav__container-logo" href="./personal_page.html">
                 <i class="fas fa-hippo"></i>
             </a>
             <button class="panel-btn hamburger hamburger--collapse" id="panel-btn" type="button">
@@ -45,6 +44,8 @@
             </ul>
         </nav>
     </header>
+    <video class="background-video" autoplay preload="auto" loop src="../recursos/video.mp4"></video>
+    
     <main class="main">
       <section id="perfil" class="perfil">
         <div class="perfi-container__info">
@@ -62,7 +63,7 @@
         </div>
         <div class="perfil-container__enlaces">
           <a class="perfil__enlace perfil__enlace-CV" href="#">
-            <i class="fas fa-file-user"></i>CV
+           CV
           </a>
           <a class="perfil__enlace perfil__enlace-portafolio" href="#">
             <i class="fa-solid fa-briefcase-arrow-right"></i>Portafolio
@@ -79,7 +80,7 @@
       </section>
       <section id="experiencia" class="experiencia">
           <div class="experiencia-container">
-            <h2 class="experiencia__title">Experiencia</h2>
+            <h2 class="experiencia__title"><i class="fas fa-analytics"></i> Experiencia <i class="fab fa-app-store-ios"></i></h2>
             <div class="experiencia__experiences">
               <section class="experiencia__experience">
                 <h4 class="experiencia__date">octubre 2021, presente</h4>
@@ -139,7 +140,7 @@
       </section>
       <section id="habilidades" class="habilidades">
           <div class="habilidades-container">
-            <h2 class="habilidades__title">Habilidades</h2>
+            <h2 class="habilidades__title"><i class="fad fa-book-dead"></i> Habilidades <i class="fad fa-book-reader"></i></h2>
             <ul class="habilidades__habilidades-list">
               <li class="habilidades__habilidad">React</li>
               <li class="habilidades__habilidad">JavaScript</li>
@@ -165,7 +166,8 @@
       </section>
       <section class="contacto" id="contactar">
         <div class="contacto-container">
-          <h2 class="contacto__tittle">Contacto</h2>
+          <h2 class="contacto__tittle">Contactar <i class="fa-solid fa-address-card"></i> :</h2>
+          
           <form action="/" class="contacto__form">
             <input type="text" placeholder="Nombre" name="nombre" class="contacto__form-input" required="" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$" title="No se aceptan caracteres especiales ni números">
             <input type="email" placeholder="Correo" name="email" class="contacto__form-input" required="">
@@ -177,59 +179,52 @@
       </section>
     </main>
     <footer class="footer">  
-      <div class="container-footer">
-          <addres class="container-footer__addres1">
+      <div class="container-footer1">
+          <addres class="container-footer1__addres1">
               <h2 class="addres1__h2">Creator Information</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A esse ut fugit dolorem voluptas. Soluta dicta sed velit officiis exercitationem voluptates, nulla ducimus quisquam quos et laudantium commodi</p>
-              <div class="container-link__page__contact">
-                  <a  class="link__page__contact" href="./personal_page/personal_page.html" id="link-page-contact">
-                      <i class="fas fa-user-secret"></i> 
-                      <span>Buscame y Contactame </span>
-                      <i class="fas fa-user-secret"></i>
-                  </a>
-              </div>
           </addres>
-          <addres class="container-footer__addres2">
+          <addres class="container-footer1__addres2">
               <h2 class="addres2__h2">Social Networks</h2>
               <div class="container-rows1">
-                <a href="#" class="row-1-1"> 
+                <a href="#" class="row-1 row-1-1"> 
                   <i class="fab fa-facebook-square" id="footer_icon1"></i>
                   <span >Follow me on Facebook</span>
                 </a>
              
-                <a href="#" class="row-1-2">
+                <a href="#" class="row-1 row-1-2">
                   <i class="fab fa-twitter-square" id="footer_icon2"></i>
                   <span >Follow me on Twitter</span>
                 </a>
               
-                <a href="#" class="row-1-3">
+                <a href="#" class="row-1 row-1-3">
                   <i class="fab fa-google-plus-square" id="footer_icon3"></i>
                   <span >Follow me on Google Plus</span>
                 </a>
               
-                <a href="#" class="row-1-4">
+                <a href="#" class="row-1 row-1-4">
                   <i class="fab fa-instagram-square" id="footer_icon4"></i>
                   <span for="">Follow me on Instagram</span>
                 </a>
-                <a href="#" class="row-1-5">
+                <a href="#" class="row-1 row-1-5">
                   <i class="fab fa-pinterest-square" id="footer_icon5"></i>
                   <span >Follow me on Pinteres</span>
                 </a>
               </div>
               
           </addres>
-          <addres class="container-footer__addres3">
+          <addres class="container-footer1__addres3">
               <h2 class="addres3__h2">Information Contact</h2>
               <div class="container-rows2">
-                <a href="#" class="row-2-1">
+                <a href="#" class="row-2 row-2-1">
                   <i class="fas fa-house-user" id="footer_icon6"></i>
                   <span>La Romana,Republica Dominicana Mnuel de Cabral Casa # 27</span>
                 </a>
-                <a href="#" class="row-2-2" id="row-2">
+                <a href="#" class="row-2 row-2-2" id="row-2">
                   <i class="fas fa-mobile-alt" id="footer_icon7"></i>
                   <span>+51-324-456-3892</span>
                 </a>
-                <a href="#" class="row-2-3">
+                <a href="#" class="row-2 row-2-3">
                   <i class="fas fa-envelope" id="footer_icon8"></i>
                   <span class="center">elcolorloestodo@gmail.com</span>
                 </a>
@@ -238,19 +233,16 @@
           </addres>   
       </div>       
    
-      <div class="box__container-footer-2">
-          <div class="container-footer-2">
+      <div class="container-footer-2">
               <div class="copyright">
-               <p>© 2021 Todos los Derechos Reservados | </p> <a href=""> Magtimus</a>
+               <p>© 2021 Todos los Derechos Reservados</p> <a href=""> Magtimus</a>
               </div>
+              <hr>
               <div class="information">
-               <a href="">Informacion Compañia</a>
-               <div>|</div>
-               <a href="">Privacidad y Politica</a>
-               <div>|</div>
-               <a class="a-ultm" href="">Terminos y Condiciones</a> 
-              </div>
-          </div>  
+               <a class="a-ultm" href="">Informacion Compañia</a>
+               <a class="a-ultm" href="">Privacidad y Politica</a>
+               <a  href="">Terminos y Condiciones</a> 
+              </div>  
       </div> 
   </footer>
     <script src="./index-dom.js" type="module"></script>

@@ -480,7 +480,7 @@ html {
    
    }
        /* ---------------------------------------------------------------------------------------------- */
-       @keyframes color-zoom-footer1 {
+    @keyframes color-zoom-footer1 {
         from {
             color: rgb(128, 0, 255);
         } 
