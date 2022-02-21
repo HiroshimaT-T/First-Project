@@ -135,10 +135,7 @@ html {
   grid-area: header;
   box-sizing: border-box;
 }
-.header-md {
-  background-color: #ffffff;
-  box-shadow: 0 0 8px 0px rgb(0, 0, 0);
-}
+
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -146,10 +143,27 @@ html {
   margin: 0 auto;
   height: 4rem;
   padding: 0 1rem;
+  color: #000000;
 }
 .header-nav__container-logo  {
   display: flex;
   text-decoration: none;
+  color: white;
+  font-family: 'Dongle', sans-serif;
+}
+.header-nav__container-logo p {
+  font-size: 2.3rem;
+  margin-left: 0.3rem;
+  margin-top: 1.1rem;
+  font-weight: 900;
+  line-height: 1.7rem;
+}
+.header-md {
+  background-color: #ffffff;
+  box-shadow: 0 0 8px 0px rgb(0, 0, 0);
+}
+.header-md .header-nav__container-logo p {
+  color: #000000;
 }
 @keyframes zoom-logo{
   from{
@@ -185,10 +199,11 @@ html {
   }
   
 } */
-.header-nav__container-logo i {
-  font-size: 3rem;
+.header-nav__container-logo img {
+  width: 3rem;
+  transform: rotateY(180deg);
   color: white;
-  animation-name: zoom-logo, color-logo, deplazamiento-logo;
+  /* animation-name: zoom-logo, color-logo, deplazamiento-logo; */
   animation-duration: 2s, 5s, 1s;
   animation-delay: 0s;
   animation-direction: alternate;
