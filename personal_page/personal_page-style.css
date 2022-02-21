@@ -15,7 +15,7 @@
   --color-li3: #c0a0c3;
   --color-li4: #dfcae1;
   --color-li5: #fffeff;
-  --type-font-family: 'Dongle', sans-serif;
+  --type-font-family: sans-serif;
   --skills-color-1: #00bef8;
   --skills-color-2: #ff0697;
   --skills-color-3: #ff4d00;
@@ -30,7 +30,7 @@ html {
   box-sizing: border-box;
   font-family:var(--type-font-family) inherit; 
 }
-@keyframes background-color-body{
+/* @keyframes background-color-body{
   0% {
     background: linear-gradient(to bottom, #7fc4b4, white);
     background-position: center;
@@ -66,16 +66,48 @@ html {
     background-size: cover;
     background-attachment: fixed;
   }
+} */
+@keyframes background-body {
+  0% {
+    background-image: url("./recursos/background-main/cellphone/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  25% {
+    background-image: url("./recursos/background-main/cellphone/2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  50% {
+    background-image: url("./recursos/background-main/cellphone/3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  75% {
+    background-image: url("./recursos/background-main/cellphone/4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  100% {
+    background-image: url("./recursos/background-main/cellphone/5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
 .body {
   width: 100%;
-  background-color: #000000;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  /* animation-name: background-color-body; */
-  animation-duration: 5s;
+  animation-name: background-body;
+  animation-duration: 12s;
   animation-delay: 0s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
@@ -92,13 +124,6 @@ html {
   grid-template-rows: 4rem auto min-content;
   box-sizing: border-box;
 
-}
-.background-video {
-  position: fixed;
-  z-index: -1000;
-  top: 0;
-  right: -80%;
-  width: 1200px;
 }
 .header {
   position: fixed;
@@ -397,6 +422,7 @@ transform: scale(1.2);
   width: 24px; 
   background-color: rgb(255, 255, 255);
 }
+
 .main {
   width: 100%;
   max-width: 1400px;
@@ -411,12 +437,20 @@ transform: scale(1.2);
   grid-template-rows: auto auto auto auto;
   box-sizing: border-box;
   gap:  4rem;
+  animation-name: background-main;
+  animation-duration: 24s;
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 /* -----------------------MAIN-SECTION-PERFIL------------------------------------------------------------------------------------- */
  .perfil {
   grid-area: perfil;
   padding-top: 4rem;
-  font-family: 'Heebo', sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
   text-align: center;
   display: grid;
   grid-template-areas: 
@@ -435,13 +469,16 @@ transform: scale(1.2);
   padding: 0.5rem;
 }
 .perfil__title{
-  font-size: 2rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size:2rem;
 }
 .perfil__sub-title{
-  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 .perfil__p {
-  font-weight:lighter;
+ 
 }
 .perfil-container__enlaces {
   grid-area: container2;
@@ -450,11 +487,65 @@ transform: scale(1.2);
   margin-bottom: 0.5rem;
   box-sizing: border-box;
 }
-.perfil-container__enlaces i {
-  font-size: 1rem;
-  color: rgb(255, 255, 255);
+.container {
+  background-color: white;
+  padding: 2rem 0;
+}
+.slider-container {
+  display: grid;
+  grid-template-columns: 50px min-content 50px;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
 
 }
+.slider__body {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1.5s;
+  display: grid;
+  align-items: center;
+
+}
+.slider__body--show {
+  opacity: 1;
+  pointer-events: unset;
+}
+.slider__img {
+  width: 250PX;
+  height: 250PX;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.2rem solid var(--color-li1);
+  box-shadow: 0 0 1.5rem 0 var(--color-li0);
+}
+
+@keyframes zoom-arrow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+    filter: brightness(150%);
+  }
+}
+.slider-arrow {
+  align-self: center;
+  font-size: 2rem;
+  color: var(--color-li1);
+  animation-name: zoom-arrow;
+  animation-duration: 1s;
+  animation-timing-function: liner;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+
+
 @keyframes zoom-color_enlace1 {
   from {
     transform: scale(1);
@@ -519,9 +610,9 @@ transform: scale(1.2);
 .experiencia {
   grid-area: experiencia;
   padding-top: 4rem;
-  background-color: white; 
+  background-color: var(--color-li4); 
   color: var(--color-li0);
-  font-family: var(--type-font-family);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding-bottom: 2rem;
 }
 
@@ -583,7 +674,7 @@ transform: scale(1.2);
   text-align: center;
   background-color: #a788ab3b;
   color: white;
-  font-family: var(--type-font-family);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding-bottom: 2rem;
 }
  .habilidades-container {
@@ -605,58 +696,58 @@ transform: scale(1.2);
 @keyframes translate-icon1 {
   0% {
     transform: translate(0);
-    color: var(--skills-color-1);
+    color:black;
   }
   20% {
     transform: translateY(-35px);
-    color: var(--skills-color-1);
+    color: rgb(0, 0, 0);
   }
   40% {
   
     transform: translate(220px , -35px);
-    color: var(--skills-color-2);
+    color: white;
   }
   60% {
     
     transform: translate(220px , 35px);
-    color: var(--skills-color-3);
+    color: black;
   }
   80% {
     transform: translate(0px , 35px);
-    color: var(--skills-color-4);
+    color: white;
   }
   100% {
     transform: translate(0);
-    color: var(--skills-color-1);
+    color: black;
   }
 
 }
 @keyframes translate-icon2 {
   0% {
     transform: translate(0);
-    color: var(--skills-color-1);
+    color: black;
   }
   20% {
     transform: translateY(-35px);
-    color: var(--skills-color-1);
+    color: black;
   }
   40% {
   
     transform: translate(-220px , -35px);
-    color: var(--skills-color-2);
+    color: white;
   }
   60% {
     
     transform: translate(-220px , 35px);
-    color: var(--skills-color-3);
+    color: black;
   }
   80% {
     transform: translate(0px , 35px);
-    color: var(--skills-color-4);
+    color: white;
   }
   100% {
     transform: translate(0);
-    color: var(--skills-color-1);
+    color: black;
   }
 }
 .fa-book-dead {
@@ -690,21 +781,21 @@ transform: scale(1.2);
 }
 @keyframes zoom-background-color-habilidades {
   0%{
-    background-color: rgb(147, 93, 168);
-    transform: scale(1);
+    background-color: rgb(0, 0, 0);
+    /* transform: scale(1); */
   }
 
   33.33% {
-    background-color:  var(--skills-color-7);
-    transform: scale(1.05);
+    background-color:  transparent;
+    /* transform: scale(1.05); */
   }
   66.66%{
-    background-color:  var(--skills-color-6);
-    transform: scale(1);
+    background-color:  black;
+    /* transform: scale(1); */
   }
   100%{
-    background-color: var(--skills-color-8);
-    transform: scale(1.05);
+    background-color: transparent;
+    /* transform: scale(1.05); */
   }
   
 }
@@ -728,7 +819,7 @@ transform: scale(1.2);
   grid-area: contactar;
   padding-top: 4rem; 
   background-color: white;
-  font-family: var(--type-font-family);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: var(--color-li0);
   text-align: center;
   padding-bottom: 2rem;
@@ -744,7 +835,7 @@ transform: scale(1.2);
 .contacto__tittle {
   margin: 0;
   font-size: 2rem;
-  font-family: var(--type-font-family);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 .contacto__form {
@@ -766,7 +857,8 @@ transform: scale(1.2);
   background-image: linear-gradient(to right, rgb(240, 240, 240), rgb(255, 255, 255) );
 }
 .contacto__form-input:focus {
-  border: 0.25rem solid rgb(235, 160, 197);
+  border: 0.25rem solid black;
+  transition: all 1s;
 }
 .contacto__form-input::placeholder {
   color: rgb(112, 112, 112);
@@ -774,20 +866,22 @@ transform: scale(1.2);
 @keyframes zoom-xolor-butoom-form {
   from {
     background-color: var(--color-li4);
-    box-shadow: 0 0rem 1rem 0.5rem var(--color-li0);
+    
     transform: scale(1);
     color: #000000;
     font-weight: 700;
   }
   to {
-    background-color: var(--color-li0);
-    box-shadow: 0 0rem 1rem 0.5rem var(--color-li4);
+    background-color: black;
+    box-shadow: 0 0rem 0.5rem 0.5rem var(--color-li4);
     transform: scale(1.1);
     color: white;
     font-weight: 700;
   }
 }
 .contacto__form-button {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
   align-self: center;
   padding: 1rem 1rem;
   border-radius: 0.5rem;
@@ -884,6 +978,44 @@ transform: scale(1.2);
   }
 }
 /* ----------------------FOOTER-------------------------------------------------------------------------- */
+@keyframes background-footer {
+  0% {
+    background-image: url("./recursos/background-footer/cellphone/1.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  25% {
+    background-image: url("./recursos/background-footer/cellphone/2.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  50% {
+    background-image: url("./recursos/background-footer/cellphone/3.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  75% {
+    background-image: url("./recursos/background-footer/cellphone/4.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  100% {
+    background-image: url("./recursos/background-footer/cellphone/5.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
 .footer {
   background-color: #01040900;
   width: 100%;
@@ -891,15 +1023,22 @@ transform: scale(1.2);
   grid-area: footer;
   max-width: 1400px;
   box-sizing: border-box inherit;
-  margin-top: 2rem;
-  font-family: var(--type-font-family);
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  animation-name: background-footer;
+  animation-duration: 24s;
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .container-footer1 {
   box-sizing: border-box;
   display: grid;
   width: 100%;
   max-width: 1400px;
-  color: #C7C7C7;
+  color: #ffffff;
   gap: 1rem;
   grid-template-areas: 
   "addres1"
@@ -907,7 +1046,7 @@ transform: scale(1.2);
   "addres3"
   ;
   padding: 1rem 1rem;
-  font-family: var(--type-font-family);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   grid-template-rows: auto auto auto;
   grid-template-columns: auto;
   
@@ -919,8 +1058,6 @@ transform: scale(1.2);
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  font-size: 1.5rem;
-  line-height: 1rem;
 }
 .container-footer1__addres2 {
   grid-area: addres2;
@@ -936,12 +1073,10 @@ transform: scale(1.2);
 }
 .addres2__h2 {
   grid-area: f-add-h_1;
-  font-size: 2rem;
-  line-height: 1.5rem;
+
 }
 .addres1__h2 {
-  font-size: 2rem;
-  line-height: 1.5rem;
+
 }
 .container-rows1 {
   display: grid;
@@ -1063,7 +1198,7 @@ transform: scale(1.2);
   }
 
 }
-@keyframes background-color--addres2__2 {
+@keyframes background-color-addres2__2 {
   0% {
     background-color: rgba(128, 0, 255, 0);
   } 
@@ -1180,11 +1315,9 @@ transform: scale(1.2);
   animation: background-color-zoom-addres2__icon5 3s alternate 0s cubic-bezier(0.86, 0.02, 0, 0.99) infinite;
 }
 .row-1 span {
-  color: #C7C7C7;
-  font-family: 'Dongle', sans-serif;
+  color: #ffffff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-left: 0.6rem;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
 }
 .container-footer1__addres3 {
   grid-area: addres3;
@@ -1200,8 +1333,6 @@ transform: scale(1.2);
 }
 .addres3__h2 {
   grid-area: f-add-h_2;
-  font-size: 2rem;
-  line-height: 1.5rem;
 
 }
 .container-rows2 {
@@ -1338,12 +1469,10 @@ transform: scale(1.2);
   animation: background-color-zoom-addres3__icon3 3s alternate 0s cubic-bezier(0.86, 0.02, 0, 0.99) infinite;
 }
 .row-2 span {
-  color: #C7C7C7;
-  font-family: 'Dongle', sans-serif;
+  color: #ffffff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-left: 0.6rem;
   text-align: start;
-  font-size: 1.5rem;
-  line-height: 1rem;
 }
 .container-footer-2 {
   box-sizing: border-box;
@@ -1355,13 +1484,13 @@ transform: scale(1.2);
   "information"
   ;
   padding: 1rem 1rem;
-  font-family: var(--type-font-family);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   grid-template-columns: auto;
   grid-template-rows: auto auto;
   background-color: #000000;
 }
  .copyright {
-  color: #C7C7C7;
+  color: #ffffff;
   display: grid;
   justify-content: center;
   margin-bottom: 0.5rem;
@@ -1373,8 +1502,7 @@ transform: scale(1.2);
   grid-template-rows: auto auto;
 }
 .copyright p {
-  font-size: 1.3rem;
-  line-height: 1rem;
+
   grid-area: copyrigh1;
 }
 .copyright a {
@@ -1382,8 +1510,6 @@ transform: scale(1.2);
   text-decoration: none;
   font-weight: bold;
   margin-left: 4px;
-  font-size: 1.3rem;
-  line-height: 1rem;
   grid-area: copyrigh2;
 }
 .information {
@@ -1404,8 +1530,6 @@ transform: scale(1.2);
   color: #c9d1d9;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.3rem;
-  line-height: 1rem;
   display: flex;
 }
 .a-ultm1::after {

@@ -25,6 +25,9 @@
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Heebo&family=IBM+Plex+Sans&family=Shizuru&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&family=IBM+Plex+Sans&family=Shizuru&display=swap" rel="stylesheet">
   </head>
@@ -47,8 +50,6 @@
             </ul>
         </nav>
     </header>
-    <!-- <video class="background-video" autoplay preload="auto" loop src="../recursos/video.mp4"></video> -->
-    
     <main class="main">
       <section id="perfil" class="perfil">
         <div class="perfi-container__info">
@@ -56,7 +57,7 @@
           Daniel Enriquez Desarrollador Web
           </h2>
           <h3 class="perfil__sub-title">
-          Si un diseño no se siente bien en el corazón, lo que dice el cerebro no importa.
+          "Si un diseño no se siente bien en el corazón, lo que dice el cerebro no importa."
           </h3>
           <p class="perfil__p">
           Estudiante de Ingeniería de Software perteneciente a los primeros puestos. Apasionado 
@@ -72,12 +73,31 @@
             <i class="fa-solid fa-briefcase-arrow-right"></i>Portafolio
           </a>
         </div>
-           <!-- <figure> 
-          <img class="perfil__foto" src="../recursos/foto-perfil.jpg" alt="Mi foto de perfil">
-        </figure> -->
-        <div class="perfil-container__foto">
-          <video class="perfil__foto" autoplay preload="auto" loop src="../recursos/5207155655961359940_play.mp4_logo_US.mp4"> 
-          </video>
+
+        <div class="slider-container container">
+          <i class="fa-solid fa-circle-left slider-arrow"  id="before"></i>
+          <article class="slider__body slider__body--show" data-id="1">
+            <figure class="slider__picture">
+              <img src="./recursos/article__slider/1.jpg" alt="Imagen de una chica" class="slider__img">
+            </figure>
+          </article>
+          <article class="slider__body" data-id="2">
+            <figure class="slider__picture">
+              <img src="./recursos/article__slider/2.jpg" alt="Imagen de una chica" class="slider__img">
+            </figure>
+          </article>
+          <article class="slider__body" data-id="3">
+            <figure class="slider__picture">
+              <img src="./recursos/article__slider/3.jpg" alt="Imagen de una chica" class="slider__img">
+            </figure>
+          </article>
+          <article class="slider__body" data-id="4">
+            <figure class="slider__picture">
+              <img src="./recursos/article__slider/4.jpg" alt="Imagen de una chica" class="slider__img">
+            </figure>
+          </article>
+         <i class="fa-solid fa-circle-right slider-arrow" id="after"></i>
+          
         </div>
         
       </section>

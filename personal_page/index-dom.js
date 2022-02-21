@@ -13,3 +13,27 @@ window.onscroll = function () {
         header.classList.remove('header-md');
     };
 };
+(function(){
+    const sliders = [...document.querySelectorAll('.slider__body')];
+    const arrowAftert = document.querySelector('#after');
+    const arrowBefore = document.querySelector('#before');
+    let value
+
+    arrowAftert.addEventListener('click', () => changePosition(1));
+    arrowBefore.addEventListener('click', () => changePosition(-1));
+
+    function changePosition(change) {
+        const currentElememt = Number(document.querySelector('.slider__body--show').dataset.id);
+        
+        value = currentElememt;
+        value += change;
+        console.log(sliders.length);
+        if(value === 0 || value == sliders.length+1){
+            value = value === 0 ? sliders.length : 1;
+        };
+        sliders[currentElememt-1].classList.toggle('slider__body--show');
+        sliders[value-1].classList.toggle('slider__body--show');
+    
+    
+    };
+})()
