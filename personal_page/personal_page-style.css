@@ -121,7 +121,7 @@ html {
     "footer"  
   ;
   grid-template-columns: auto;
-  grid-template-rows: 4rem auto min-content;
+  grid-template-rows: 4rem auto auto;
   box-sizing: border-box;
 
 }
