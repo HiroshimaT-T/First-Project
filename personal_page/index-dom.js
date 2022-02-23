@@ -3,8 +3,7 @@ const d = document;
 d.addEventListener("DOMContentLoaded", (e) => {
     hamburgerMenu(".panel-btn" , ".header-nav__container-list-desactibe" , ".header-nav-link__items");
 });
-
-window.onscroll = function () {
+window.onscroll = function scrollHeader() {
     let scroll = document.documentElement.scrollTop;
     let header = document.getElementById("header");
     if (scroll > 64) {
@@ -36,4 +35,25 @@ window.onscroll = function () {
     
     
     };
-})()
+})();
+
+function lluviaFontAwesome() {
+    let cantidadFA = 250
+    let i = 0
+    let sectionExperence = document.querySelector('.experiencia-container-moster');
+    while(i < cantidadFA) {
+        let iMosterElemtent = document.createElement('i');
+        iMosterElemtent.classList.add('fa' , 'fa-alien-monster');
+        let fontMoster = Math.random() * 5;
+        let posX = Math.random() * window.innerWidth;
+        let duration = Math.random() * 5 ;
+        
+        iMosterElemtent.style.fontSize =  fontMoster + 20 + 'px';
+        iMosterElemtent.style.left = posX - 24 + 'px';
+        iMosterElemtent.style.animationDuration = duration + 7 +'s';
+        
+        sectionExperence.appendChild(iMosterElemtent); 
+        i++
+    };
+};
+lluviaFontAwesome();
