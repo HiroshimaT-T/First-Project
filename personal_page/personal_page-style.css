@@ -30,44 +30,6 @@ html {
   box-sizing: border-box;
   font-family:var(--type-font-family) inherit; 
 }
-
-/* @keyframes background-color-body{
-  0% {
-    background: linear-gradient(to bottom, #7fc4b4, white);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  25% {
-    background: linear-gradient(to bottom, #b9e1d8, white);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  50% {
-    background: linear-gradient(to bottom, #d9e2e6, white);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  75% {
-    background: linear-gradient(to bottom, #f6bf96, white);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  100% {
-    background: linear-gradient(to bottom, #f0a165, white);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-} */
 @keyframes background-body {
   0% {
     background-image: url("./recursos/background-main/cellphone/1.jpg");
@@ -157,15 +119,17 @@ html {
   z-index: -2;
   position: absolute;
   width: 100%;
+  height: 100%;
 }
 .fa-alien-monster {
+  font-size: 4rem;
   position: absolute;
 	animation-name: lluvia;
 	animation-duration: 2s;
 	animation-timing-function: linear;
 	animation-delay: 0s;
 	animation-iteration-count: infinite;
-	animation-direction: normal;
+	animation-direction: alternate;
 	transition: all 0.5s;
 
 }
@@ -192,10 +156,12 @@ html {
 }
 @keyframes lluvia {
 	from {
-		transform: translateY(-30px);
+		/* transform: translateY(-30px); */
+    top: 0;
 	}
 	to {
-		transform: translateY(calc(600vh));
+		/* transform: translateY(calc(600vh)); */
+    top: calc(100% - 4rem);
 	}
 } 
 .header {
@@ -715,7 +681,7 @@ html {
 /* ----------------------MAIN-SECTION-EXPERIENCIA------------------------------------------------------------------------------------- */
 .experiencia {
   grid-area: experiencia;
-  background-color: #bbbbbb7c; 
+  background-color: rgb(255, 255, 255); 
   color: var(--color-li0);
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: flex;
@@ -730,53 +696,179 @@ html {
   align-items: center;
   gap: 2rem;
   max-width: 700px;
-  padding: 4.1rem 2rem 2rem 2rem;
-  background-color: #dfcae1c4;
+  padding: 4.1rem 0 2rem 0;
+  background-color: #f7f7f7;
   z-index: 555;
+  justify-content: center;
 }
+.experiencia-container-title {
+  position: relative;
+  width: 265px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+ 
+}
+.box-experiencia__title::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  left: -13px;
+  top: 0px;
+  height: 47px;
+  background-color:#fc0060;
+  transition: all 1s;
+  border-right: 7px solid #fc0060;
+  animation-name: animation-title-exp;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 
+}
+@keyframes animation-title-exp{
+  0% {
+    width: 0px;
+  }
+  100% {
+      width: 273px;
+      background-color:#fc5f9b;
+      border-right: 7px solid #fc5f9b;
+  }
+}
 .experiencia__title {
   margin: 0;
   font-size: 2rem;
   text-align: center;
+  position: relative;
+  color: #00ade1;
+  text-transform: uppercase;
+  transition: all 2s;
+  animation-name: animation-color-title-exp;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
-
-.experiencia__experiences {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  
+@keyframes animation-color-title-exp{
+  0% {
+      color: #fc5f9b;
+  }
+  100% {
+      color: #ffffff;
+  }
+}
+#i-ex-clr {
+  color: transparent;
+  -webkit-text-stroke: 2px #00ade1;
+  transition: all 2s;
+  animation-name: animation-color-title-ico-exp;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes animation-color-title-ico-exp{
+  0% {
+    color: transparent;
+    -webkit-text-stroke: 2px #fc5f9b;
+  }
+  100% {
+      -webkit-text-stroke: 2px #ffffff;
+      color: transparent;
+  }
 }
 
 .experiencia__experience {
-  display: flex;
   flex-direction: column;
+  width: 319px;
+  background-color: #f8d2ed;
+  display: flex;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.075);
+  transition: all 1s;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 1rem;
+  box-sizing: border-box;
 }
-
+.hidden{
+  display: none;
+}
+.experiencia__experiences-box {
+  
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 319px;
+  background-color: #ffffff;
+  height: 5rem;
+  position: relative;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.075);
+  font-family: 'Poppins', sans-serif;
+}
+.experiencia__experiences-box::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  background-color: var(--clr);
+  height: 5rem;
+  transition: all 0.5s ease-in-out;
+}
+.experiencia__experiences-box:hover::before {
+  width: 100%;
+}
+.experiencia__experiences-box-ico {
+  margin-right: 0.7rem;
+  margin-left: 0.5rem;
+}
+.experiencia__experiences-box-ico i{
+  font-size: 1.6rem;
+  position: relative;
+  color: var(--clr);
+  transition: all 0.5s ease-in-out;
+}
+.experiencia__experiences-box:hover .experiencia__experiences-box-ico i{
+  color: white;
+}
+.experiencia__experiences-box-text {
+  position: relative;
+}
+.experiencia__experiences-box-text h3{
+  font-weight: 500;
+  color: var(--clr);
+  transition: all 0.5s ease-in-out;
+}
+.experiencia__experiences-box:hover .experiencia__experiences-box-text h3 {
+  color: white;
+   
+}
+.experiencia__experiences-box-text h4{
+   color: #999;
+   font-size: 0.9rem;
+   font-weight: 500;
+   transition: all 0.5s ease-in-out; 
+}
+.experiencia__experiences-box:hover .experiencia__experiences-box-text h4 {
+  color: white;
+}
 .experiencia__date {
-  color: var(--color-li2);
   margin: 0;
-}
-
-.experiencia__company {
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-.experiencia__role {
-  color: var(--color-li1);
-  margin: 0;
-  font-weight: 400;
 }
 
 .experiencia__activities {
   margin: 0;
   margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  
 }
 
 .experiencia__activity {
   list-style: square;
-}
+} 
 /* ---------------------------MAIN-SECTION-SkillS----------------------------------------------------------------------------- */
 .habilidades {
   grid-area: habilidades;
@@ -1153,7 +1245,7 @@ html {
   }
 }
 .footer {
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
   width: 100%;
   box-shadow: 0 0 0.9rem 0.3rem rgba(0, 0, 0, 0.521);
   grid-area: footer;
@@ -1167,7 +1259,6 @@ html {
   animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  z-index: -3333;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1191,14 +1282,13 @@ html {
   grid-template-rows: auto auto auto;
   grid-template-columns: auto;
   position: relative;
-  z-index: -222;
   align-self: center;
 }
 .contanier-svg{
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -111;
+    z-index: -1;
     display: flex;
     transform: rotate(180deg);
 }
@@ -2387,7 +2477,7 @@ html {
     gap: 2rem;
     max-width: 700px;
     padding: 4.1rem 2rem 2rem 2rem;
-    background-color: rgba(238, 210, 231, 0.507);
+    background-color: #f7f7f7;
 
 }
 .contacto__form-input {

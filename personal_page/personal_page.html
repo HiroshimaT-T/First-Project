@@ -53,6 +53,9 @@
       href="https://fonts.googleapis.com/css2?family=Heebo&family=IBM+Plex+Sans&family=Shizuru&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   </head>
   <body class="body">
     <header class="header" id="header">
@@ -86,7 +89,7 @@
             >
           </li>
           <li style="--clr:#00dc1c" class="header-nav__container-link header-nav__container-link3">
-            <a data-text="&nbsp;HABILIDAD"
+            <a data-text="&nbsp;HABILIDADES"
               class="header-nav-link__items header-nav-link__items3"
               href="#habilidades"
               >&nbsp;HABILIDADES&nbsp;</a
@@ -104,7 +107,6 @@
     </header> 
     <div class="experiencia-container-moster"></div>
     <main class="main">
-      <div class="experiencia-container-moster"></div>
       <section id="perfil" class="perfil">
         <div class="perfi-container__info">
           <h2 class="perfil__title">Daniel Enriquez Desarrollador Web</h2>
@@ -178,101 +180,137 @@
         </div>
       </section>
       <section id="experiencia" class="experiencia">
-       
-        <div class="experiencia-container">
-          <h2 class="experiencia__title">
-            <i class="fas fa-analytics"></i> Experiencia
-            <i class="fab fa-app-store-ios"></i>
-          </h2>
-          <div class="experiencia__experiences">
-            <section class="experiencia__experience">
-              <h4 class="experiencia__date">octubre 2021, presente</h4>
-              <h3 class="experiencia__company">Mandü</h3>
-              <h4 class="experiencia__role">Software Engineer Trainee</h4>
-              <ul class="experiencia__activities">
-                <li class="experiencia__activity">
-                  Mantenimiento web: Actualización de diseño, optimización y
-                  adición de funcionalidades.
-                </li>
-                <li class="experiencia__activity">
-                  Maquetación web de diseños del Figma en Laravel.
-                </li>
-              </ul>
-            </section>
-            <section class="experiencia__experience">
-              <h4 class="experiencia__date">septiembre 2021, presente</h4>
-              <h3 class="experiencia__company">DRIVEN</h3>
-              <h4 class="experiencia__role">Frontend Developer Junior</h4>
-              <ul class="experiencia__activities">
-                <li class="experiencia__activity">
-                  Desarrollo de aplicaciones e-commerce con VTEX IO y React bajo
-                  el marco de trabajo Scrum.
-                </li>
-                <li class="experiencia__activity">
-                  Maquetación web de diseños del Figma en React esencialmente
-                  con CSS.
-                </li>
-              </ul>
-            </section>
-            <section class="experiencia__experience">
-              <h4 class="experiencia__date">junio 2021, presente</h4>
-              <h3 class="experiencia__company">Idat</h3>
-              <h4 class="experiencia__role">Docente</h4>
-              <ul class="experiencia__activities">
-                <li class="experiencia__activity">
-                  Curso: Diseño y Desarrollo Web: HTML, CSS, JavaScript,
-                  Bootstrap, jQuery, PHP y MySQL.
-                </li>
-                <li class="experiencia__activity">
-                  Desarrollo de proyectos y materiales para el aprendizaje
-                  teórico y práctico de los alumnos.
-                </li>
-              </ul>
-            </section>
-            <section class="experiencia__experience">
-              <h4 class="experiencia__date">diciembre 2020, marzo 2021</h4>
-              <h3 class="experiencia__company">Tata Consultancy Services</h3>
-              <h4 class="experiencia__role">Trainee de Sistemas</h4>
-              <ul class="experiencia__activities">
-                <li class="experiencia__activity">
-                  Testing de código en GeneXus, AS/400, HTML, CSS, JavaScript,
-                  Java, VB, SQL.
-                </li>
-                <li class="experiencia__activity">
-                  Desarrollo de casos de prueba y ejecución de pruebas
-                  funcionales.
-                </li>
-              </ul>
-            </section>
-            <section class="experiencia__experience">
-              <h4 class="experiencia__date">marzo 2020, diciembre 2020</h4>
-              <h3 class="experiencia__company">Canvia</h3>
-              <h4 class="experiencia__role">
-                Practicante Pre Profesional de Sistemas
-              </h4>
-              <ul class="experiencia__activities">
-                <li class="experiencia__activity">
-                  Desarrollo de admin’s con React y conexión con API’s para el
-                  control de los bot’s de RPA.
-                </li>
-                <li class="experiencia__activity">
-                  Desarrollo de flujos automatizados con Power Automate, bajo el
-                  marco de trabajo Scrum.
-                </li>
-              </ul>
-            </section>
+        <div  class="experiencia-container">
+            <div class="experiencia-container-title">
+              <div class="box-experiencia__title">
+                <h2 data-text="Experiencia" class="experiencia__title">
+              <i id="i-ex-clr" class="fas fa-analytics"></i> Experiencia 
+              <i id="i-ex-clr" class="fab fa-app-store-ios"></i>
+              </div>
+              </h2>
+            </div>
+            <div class="experiencia__experiences">
+              <section class="experiencia__experiences-box"  style="--clr:#00ade1;">
+                <div class="experiencia__experiences-box-ico">
+                  <i class="fal fa-laptop-code"></i>
+                </div>
+                <div class="experiencia__experiences-box-text">
+                  <h3>
+                    Software Engineer Trainee
+                  </h3>
+                    <h4>Company : Mandü</h4>
+                </div>
+              </section>
+              <section class="experiencia__experience hidden">
+                <h4 class="experiencia__date">octubre 2021, presente</h4>
+                <ul class="experiencia__activities">
+                  <i class="fal fa-code"></i>
+                    Mantenimiento web: Actualización de diseño, optimización y
+                    adición de funcionalidades.
+                  </li>
+                  <li class="experiencia__activity">
+                    Maquetación web de diseños del Figma en Laravel.
+                  </li>
+                </ul>
+              </section>
+              <section class="experiencia__experiences-box" style="--clr:#ffdd1c;">
+              <div class="experiencia__experiences-box-ico">
+                <i class="fal fa-window-alt"></i>
+              </div>
+              <div class="experiencia__experiences-box-text">
+                <h3>
+                  Frontend Developer Junior
+                </h3>
+                  <h4>Company : DRIVEN</h4>
+              </div>
+              </section>
+              <section class="experiencia__experience hidden">
+                <h4 class="experiencia__date">septiembre 2021, presente</h4>
+                <ul class="experiencia__activities">
+                  <li class="experiencia__activity">
+                    Desarrollo de aplicaciones e-commerce con VTEX IO y React bajo
+                    el marco de trabajo Scrum.
+                  </li>
+                  <li class="experiencia__activity">
+                    Maquetación web de diseños del Figma en React esencialmente
+                    con CSS.
+                  </li>
+                </ul>
+              </section>
+              <section class="experiencia__experiences-box" style="--clr:#dc00d4;">
+            <div class="experiencia__experiences-box-ico">
+              <i class="fal fa-database"></i>
+            </div>
+            <div class="experiencia__experiences-box-text">
+              <h3>
+                Idat
+              </h3>
+                <h4>Company : Docente</h4>
+            </div>
+              </section>
+              <section class="experiencia__experience hidden">
+                <h4 class="experiencia__date">junio 2021, presente</h4>
+                <ul class="experiencia__activities">
+                  <li class="experiencia__activity">
+                    Curso: Diseño y Desarrollo Web: HTML, CSS, JavaScript,
+                    Bootstrap, jQuery, PHP y MySQL.
+                  </li>
+                  <li class="experiencia__activity">
+                    Desarrollo de proyectos y materiales para el aprendizaje
+                    teórico y práctico de los alumnos.
+                  </li>
+                </ul>
+              </section>
+              <section class="experiencia__experiences-box" style="--clr:#00dc1c;">
+          <div class="experiencia__experiences-box-ico">
+            <i class="fal fa-window-restore"></i>
           </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
+          <div class="experiencia__experiences-box-text">
+            <h3>
+              Tata Consultancy Services
+            </h3>
+              <h4>Company : Trainee de Sistema</h4>
+          </div>
+              </section>
+              <section class="experiencia__experience hidden">
+                <h4 class="experiencia__date">diciembre 2020, marzo 2021</h4>
+                <ul class="experiencia__activities">
+                  <li class="experiencia__activity">
+                    Testing de código en GeneXus, AS/400, HTML, CSS, JavaScript,
+                    Java, VB, SQL.
+                  </li>
+                  <li class="experiencia__activity">
+                    Desarrollo de casos de prueba y ejecución de pruebas
+                    funcionales.
+                  </li>
+                </ul>
+              </section>
+              <section class="experiencia__experiences-box" style="--clr:#fc5f9b;">
+        <div class="experiencia__experiences-box-ico">
+          <i class="fal fa-file-code"></i>
         </div>
-     
+        <div class="experiencia__experiences-box-text">
+          <h3>
+            Canvia
+          </h3>
+            <h4>Company : Practicante Pre Profesional de Sistemas</h4>
+        </div>
+              </section>
+              <section class="experiencia__experience hidden">
+                <h4 class="experiencia__date">marzo 2020, diciembre 2020</h4>
+                <ul class="experiencia__activities">
+                  <li class="experiencia__activity">
+                    Desarrollo de admin’s con React y conexión con API’s para el
+                    control de los bot’s de RPA.
+                  </li>
+                  <li class="experiencia__activity">
+                    Desarrollo de flujos automatizados con Power Automate, bajo el
+                    marco de trabajo Scrum.
+                  </li>
+                </ul>
+              </section>
+            </div>
+        </div>    
       </section>
       <section id="habilidades" class="habilidades">
         <div class="hero-blob">

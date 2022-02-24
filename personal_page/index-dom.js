@@ -38,22 +38,38 @@ window.onscroll = function scrollHeader() {
 })();
 
 function lluviaFontAwesome() {
-    let cantidadFA = 250
+    let cantidadFA = 30
     let i = 0
     let sectionExperence = document.querySelector('.experiencia-container-moster');
     while(i < cantidadFA) {
         let iMosterElemtent = document.createElement('i');
         iMosterElemtent.classList.add('fa' , 'fa-alien-monster');
         let fontMoster = Math.random() * 5;
-        let posX = Math.random() * window.innerWidth;
+        let posX = Math.random() * (window.innerWidth - 72);
         let duration = Math.random() * 5 ;
-        
-        iMosterElemtent.style.fontSize =  fontMoster + 20 + 'px';
-        iMosterElemtent.style.left = posX - 24 + 'px';
+     
+        // iMosterElemtent.style.fontSize =  fontMoster + 20 + 'px';
+        iMosterElemtent.style.left = posX  + 'px';
         iMosterElemtent.style.animationDuration = duration + 7 +'s';
-        
+     
         sectionExperence.appendChild(iMosterElemtent); 
         i++
     };
 };
 lluviaFontAwesome();
+
+
+let linkExperiencia = document.querySelectorAll('.experiencia__experiences-box');
+
+linkExperiencia.forEach( (linksExperiencias , linkExperienciaIndex) => {
+    linksExperiencias.addEventListener('click' , () => {
+       let textExperiencia = document.querySelectorAll('.experiencia__experience');
+       textExperiencia.forEach((textExperiencia , textsExperienciasIndex) => {
+            if(textsExperienciasIndex === linkExperienciaIndex){
+                return textExperiencia.classList.toggle('hidden');
+            };
+            textExperiencia.classList.add('hidden');
+    });
+    });
+ 
+});
