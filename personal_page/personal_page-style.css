@@ -116,7 +116,6 @@ html {
   border-radius: 10px;  
 }
 .experiencia-container-moster {
-  z-index: -2;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -131,7 +130,11 @@ html {
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	transition: all 0.5s;
-
+  z-index: 4;
+}
+.fa-alien-monster-filter {
+  filter: brightness(120%) drop-shadow(0 0 5px) drop-shadow(0 0 15px);
+  
 }
 .fa-alien-monster:nth-child(3n+1) {
 	/* background: linear-gradient(transparent, ); */
@@ -528,25 +531,83 @@ html {
 /* -----------------------MAIN-SECTION-PERFIL------------------------------------------------------------------------------------- */
  .perfil {
   grid-area: perfil;
-  padding-top: 4rem;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
   text-align: center;
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
+  "container-checket" 
   "container1"
   "container2"
   "container3"
   ;
-  grid-template-columns: 100%;
-  grid-template-rows: auto auto ;
+  grid-template-columns: 100vw;
+  grid-template-rows: 5rem auto auto auto;
   gap: 1rem;
   background-color: #a788ab3b;
   justify-content: center;
   width: 100%;
   max-width: 1400px;
+  z-index: 33;
 }
-.perfi-container__info {
+.perfil-container__checkbox {
+  grid-area: container-checket;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-checkbox {
+  width: 6rem;
+  height: 3rem;
+  background-color: #333;
+  position: relative;
+  border-radius: 10px;
+}
+.box-checkbox input {
+  appearance: none;
+}
+.checkbox {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: #271f28;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  border: 3px solid #333;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.focus {
+  color: rgb(155, 143, 143);
+  font-size: 2rem;
+ transition: all 0.5s;
+}
+.checkbox-active{
+  left: 3rem;
+}
+.focus-on {
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(0 0 5px )
+   drop-shadow(0 0 5px )
+;
+}
+.intrp__btn {
+  font-size: 1.7rem;
+  color: #8a8a8a;
+  padding: 0 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.intrp__btn-on {
+  color: white;
+  filter: drop-shadow(0 0 5px white) brightness(150%) drop-shadow(0 0 5px white);
+}
+.perfil-container__info {
   grid-area: container1;
   color: white;
   padding: 0.5rem;
@@ -567,7 +628,7 @@ html {
   grid-area: container2;
   display: flex;
   justify-content: center;
-  margin-bottom: 0.5rem;
+  padding-bottom: 1rem;
   box-sizing: border-box;
 }
 
@@ -698,6 +759,7 @@ html {
   max-width: 700px;
   padding: 4.1rem 0 2rem 0;
   background-color: #f7f7f7;
+  position: relative;
   z-index: 555;
   justify-content: center;
 }
@@ -816,7 +878,7 @@ html {
   width: 5px;
   background-color: var(--clr);
   height: 5rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .experiencia__experiences-box:hover::before {
   width: 100%;
@@ -881,7 +943,6 @@ html {
   width: 100%;
   max-width: 1400px;
   position: relative;
-  z-index: 2;
 }
 .hero-blob svg{
   width: 100%;
@@ -904,6 +965,8 @@ html {
   gap: 2.5rem;
   padding: 4rem 2rem 2rem 2rem;
   max-width: 700px;
+  z-index: 333;
+  position: relative;
 }
 
 .habilidades__title {
@@ -1048,6 +1111,7 @@ html {
   justify-content: center;
   width: 100%;
   max-width: 1400px;
+  position: relative;
 }
 .contacto-container {
   display: flex;
@@ -1055,6 +1119,8 @@ html {
   gap: 1rem;
   padding: 0 1rem;
   justify-content: center;
+  position: relative;
+  z-index: 33;
 }
 .contacto__tittle {
   margin: 0;
@@ -1262,7 +1328,7 @@ html {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
+  position: relative;
 }
 
 .container-footer1 {
@@ -1283,6 +1349,7 @@ html {
   grid-template-columns: auto;
   position: relative;
   align-self: center;
+  z-index: 33;
 }
 .contanier-svg{
     position: absolute;
@@ -1740,6 +1807,8 @@ html {
   grid-template-columns: auto;
   grid-template-rows: auto auto;
   background-color: #000000;
+  position: relative;
+  z-index: 33;
 }
  .copyright {
   color: #ffffff;
@@ -1805,6 +1874,64 @@ html {
   display: flex;
   grid-area:information3;
   text-align: center;
+} 
+.box-navigation {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  border-radius: 1rem;
+  transition: 0.5s;
+  transition-delay: 0.8s;
+  background-color: rgba(129, 129, 129, 0.527);
+  z-index: 9999;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+
+.box-navigation-active {
+  width: 200px;
+  height: 200px;
+  transition-delay: 0s;
+  transform: translate(-3rem , -3rem);
+}
+.box-navigation .link-navigation {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: rgb(84, 86, 207);
+  position: absolute;
+  transform: translate(calc(12px * var(--x)), calc(12px * var(--y)));
+  transition: all 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  filter: drop-shadow( 0 0 3px rgb(133, 135, 241))drop-shadow( 0 0 5px rgb(133, 135, 241))drop-shadow( 0 0 7px rgb(133, 135, 241));
+
+}
+ .box-navigation-active .link-navigation{
+  transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
+  width: 45px;
+  height: 45px;
+  background-color: rgb(133, 135, 241);;
+
+}
+.box-navigation .link-navigation i{
+  font-size: 0px; 
+  color:transparent;  
+  transition: all 0.5s;  
+  transition-delay: calc(0.1s * var(--i));
+
+}
+.box-navigation-active .link-navigation i{
+  font-size: 25px;
+  color: var(--clr);
+  filter: brightness(2) drop-shadow(0 0 10px) drop-shadow(0 0 5px) drop-shadow(0 0 10px);
 } 
 @media (min-width: 356px) {
  
@@ -2026,7 +2153,7 @@ html {
 }
 @media (min-width: 720px) {
  
-  .perfi-container__info {
+  .perfil-container__info {
     max-width: 656px;
   }
   .slider__img {
@@ -2343,21 +2470,22 @@ html {
   /* -----------------------MAIN-SECTION-PERFIL------------------------------------------------------------------------------------- */
  .perfil {
   grid-area: perfil;
-  padding-top: 4rem;
+
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
+  "container-checket container-checket " 
   "container1 container3"
   "container2 container3"
   ;
-  grid-template-columns: 656px 1fr;
-  grid-template-rows: auto auto ;
+  grid-template-columns:  656px 1fr;
+  grid-template-rows:6rem auto  ;
   background-color: #a788ab3b;
   justify-content: center;
   gap: 0;
 }
-.perfi-container__info {
+.perfil-container__info {
   grid-area: container1;
   color: var(--color-li0);
   padding: 2rem;
@@ -2379,9 +2507,9 @@ html {
   grid-area: container2;
   display: flex;
   justify-content: center;
-  margin-bottom: 0rem;
   box-sizing: border-box;
   background-color: #ccd9f7;
+  padding-bottom: 1rem;
 
 }
 .container {

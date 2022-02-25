@@ -57,7 +57,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   </head>
-  <body class="body">
+  <body class="body"> 
+    <div class="experiencia-container-moster"></div>
     <header class="header" id="header">
       <nav class="header-nav">
         <a class="header-nav__container-logo" href="./personal_page.html">
@@ -105,10 +106,21 @@
         </ul>
       </nav>
     </header> 
-    <div class="experiencia-container-moster"></div>
     <main class="main">
       <section id="perfil" class="perfil">
-        <div class="perfi-container__info">
+        <div class="perfil-container__checkbox">
+        <span class="intrp__btn intrp__btn-on"> Off </span>
+          <label class="box-checkbox">
+             
+              <span for="checkbox-active-perfil" class="checkbox">
+                <i class="fal fa-lightbulb focus"></i>
+              </span>
+              
+        </label>
+        <span class="intrp__btn"> On </span>
+        </div>
+        
+        <div class="perfil-container__info">
           <h2 class="perfil__title">Daniel Enriquez Desarrollador Web</h2>
           <h3 class="perfil__sub-title">
             "Si un diseño no se siente bien en el corazón, lo que dice el
@@ -652,7 +664,18 @@
           <a class="a-ultm2" href="">Terminos y Condiciones</a>
         </div>
       </div>
-    </footer> 
+    </footer>  
+    <div class="box-navigation">
+      <span class="link-navigation" style="--i:0;--x:1;--y:1;--clr:#00bef8"><i class="fal fa-acorn"></i></span>
+      <span class="link-navigation" style="--i:1;--x:-1;--y:-1;--clr:#ff0697"><i class="fal fa-apple-crate"></i></span>
+      <span class="link-navigation" style="--i:2;--x:0;--y:1;--clr:#ff4d00"><i class="fal fa-atlas"></i></span>
+      <span class="link-navigation" style="--i:3;--x:1;--y:-1;--clr:#ffe600"><i class="fal fa-bell"></i></span>
+      <span class="link-navigation" style="--i:4;--x:-1;--y:0;--clr:#ac0c56"><i class="fal fa-biohazard"></i></span>
+      <span class="link-navigation" style="--i:5;--x:0;--y:-1;--clr:rgb(36, 255, 109)"><i class="fal fa-bug"></i></span>
+      <span class="link-navigation" style="--i:6;--x:1;--y:0;--clr:rgb(31, 7, 250)"><i class="fal fa-chess-queen"></i></span>
+      <span class="link-navigation" style="--i:7;--x:-1;--y:1;--clr:rgb(255, 2, 86)"><i class="fal fa-cloud-hail"></i></span>
+      <span class="link-navigation" style="--i:8;--x:0;--y:0;--clr:rgb(155, 67, 255)"><i class="fal fa-cloud-hail"></i></span>    
+    </div>
     <script src="index-dom.js" type="module">
     </script>
   </body>
